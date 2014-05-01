@@ -4,7 +4,7 @@
  <title>Seonho Oh</title>
  <link href="http://seonho.github.io/atom.xml" rel="self"/>
  <link href="http://seonho.github.io/"/>
- <updated>2014-05-01T15:39:16+09:00</updated>
+ <updated>2014-05-01T17:06:03+09:00</updated>
  <id>http://seonho.github.io</id>
  <author>
    <name>Seonho Oh</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Github에 Jekyll을 이용한 블로그 만들기</title>
-   <link href="http://seonho.github.io/2014/05/01/Github-blog/"/>
+   <link href="http://seonho.github.io/github-pages-jekyll"/>
    <updated>2014-05-01T00:00:00+09:00</updated>
-   <id>http://seonho.github.io/2014/05/01/Github-blog</id>
+   <id>http://seonho.github.io/github-pages-jekyll</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com&quot;&gt;Github&lt;/a&gt;에서는 Pages라는 기능을 제공하는데,&lt;/p&gt;
 
 &lt;p&gt;사용자 혹은 프로젝트를 위한 웹페이지를 무료로 사용할 수 있다.&lt;/p&gt;
