@@ -16,7 +16,7 @@
     {
   "title"    : "Github에 Jekyll을 이용한 블로그 만들기",
   "category" : "",
-  "tags"     : ["github","jekyll","blog", null],
+  "tags"     : ["Github","jekyll","blog", null],
   "href"     : "/github-pages-jekyll",
   "date"     : {
     "day"   : "01",

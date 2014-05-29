@@ -40,7 +40,7 @@
 
   <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <!-- tag, category search -->
-  <script defer src="/js/alexpearce.js"></script>
+  <script defer src="/scripts/alexpearce.js"></script>
 </head>
 <body>
   <div class="top-bar"></div>
@@ -53,6 +53,7 @@
     <!--<a class="" href="/portfolio/">Portfolio</a>-->
     <!--<a class=" contact" href="/contact/">Contact</a>-->
     <a class="" href="/archive/">Archive</a>
+    <a class=" selected " href="/tag/">Tag</a>
     <!--<a href="https://github.com/ssaunier">Github</a>-->
   </nav>
   <div class="pull-right right logo">
@@ -74,40 +75,130 @@
 
   </div>
 
-  <section class="inner">
-  <ul>
+  <div class="tag-cloud">
+  
+    <!--<a href="#posts-tag"-->
+    <a href="../search/?tags=github"
+    id="1" class="__tag" style="margin: 5px">Github
+    </a>
+    <!--<ul id="list_1" style="display:none;">
+      
+        <li><a href="/github-pages-jekyll">Github에 Jekyll을 이용한 블로그 만들기</a></li>
+      
+    </ul>-->
+  
+    <!--<a href="#posts-tag"-->
+    <a href="../search/?tags=jekyll"
+    id="2" class="__tag" style="margin: 5px">jekyll
+    </a>
+    <!--<ul id="list_2" style="display:none;">
+      
+        <li><a href="/github-pages-jekyll">Github에 Jekyll을 이용한 블로그 만들기</a></li>
+      
+    </ul>-->
+  
+    <!--<a href="#posts-tag"-->
+    <a href="../search/?tags=blog"
+    id="3" class="__tag" style="margin: 5px">blog
+    </a>
+    <!--<ul id="list_3" style="display:none;">
+      
+        <li><a href="/github-pages-jekyll">Github에 Jekyll을 이용한 블로그 만들기</a></li>
+      
+    </ul>-->
+  
+    <!--<a href="#posts-tag"-->
+    <a href="../search/?tags=latex"
+    id="4" class="__tag" style="margin: 5px">LaTeX
+    </a>
+    <!--<ul id="list_4" style="display:none;">
+      
+        <li><a href="/latex-package-pdfcomment">LaTex Package - pdfcomment</a></li>
+      
+    </ul>-->
+  
+    <!--<a href="#posts-tag"-->
+    <a href="../search/?tags=package"
+    id="5" class="__tag" style="margin: 5px">Package
+    </a>
+    <!--<ul id="list_5" style="display:none;">
+      
+        <li><a href="/latex-package-pdfcomment">LaTex Package - pdfcomment</a></li>
+      
+    </ul>-->
+  
+    <!--<a href="#posts-tag"-->
+    <a href="../search/?tags=pdfcomment"
+    id="6" class="__tag" style="margin: 5px">pdfcomment
+    </a>
+    <!--<ul id="list_6" style="display:none;">
+      
+        <li><a href="/latex-package-pdfcomment">LaTex Package - pdfcomment</a></li>
+      
+    </ul>-->
+  
+</div>
+
+<div id="posts-tags" class="post-list" style="margin: 50px;"></div>
+
+<script type="text/javascript">
+  $(function() {
+    var minFont = 15.0,
+        maxFont = 40.0,
+        diffFont = maxFont - minFont,
+        size = 0;
+
+    
     
       
-
-          <li><a href="/tag/LaTeX">LaTeX</a></li>
-
-      
-
-          <li><a href="/tag/Package">Package</a></li>
-
-      
-
-          <li><a href="/tag/pdfcomment">pdfcomment</a></li>
-
+    
       
     
       
-
-          <li><a href="/tag/github">github</a></li>
-
-      
-
-          <li><a href="/tag/jekyll">jekyll</a></li>
-
-      
-
-          <li><a href="/tag/blog">blog</a></li>
-
+    
       
     
-  </ul>
-</section>
+      
+    
+      
+    
 
+    
+      size = (Math.log(1) / Math.log(1.0)) * diffFont
+             + minFont;
+      $("#1").css("font-size", size + "px");
+    
+      size = (Math.log(1) / Math.log(1.0)) * diffFont
+             + minFont;
+      $("#2").css("font-size", size + "px");
+    
+      size = (Math.log(1) / Math.log(1.0)) * diffFont
+             + minFont;
+      $("#3").css("font-size", size + "px");
+    
+      size = (Math.log(1) / Math.log(1.0)) * diffFont
+             + minFont;
+      $("#4").css("font-size", size + "px");
+    
+      size = (Math.log(1) / Math.log(1.0)) * diffFont
+             + minFont;
+      $("#5").css("font-size", size + "px");
+    
+      size = (Math.log(1) / Math.log(1.0)) * diffFont
+             + minFont;
+      $("#6").css("font-size", size + "px");
+    
+
+    //$('.tag-cloud a[class^="__tag"]').click(function() {
+    //  $('.post-list').empty();
+    //  $('#list_' + $(this).attr('id')).each(function() {
+    //     $('.post-list').append('<ul>' + $(this).html() + '</ul>');
+    //  });
+    });
+  });
+</script>
+
+  
   <div class="separator"></div>
 
   <div  style="border-bottom: 1px solid #ddd"></div>
