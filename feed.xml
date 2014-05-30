@@ -4,17 +4,65 @@
  <title>Seonho Oh</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
-<<<<<<< HEAD
- <updated>2014-05-30T00:37:30+09:00</updated>
-=======
- <updated>2014-05-28T16:33:30+09:00</updated>
->>>>>>> FETCH_HEAD
+ <updated>2014-05-30T17:03:48+09:00</updated>
  <id></id>
  <author>
    <name>Seonho Oh</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Public source code repositories</title>
+   <link href="/public-source-code-repositories"/>
+   <updated>2014-05-26T00:00:00+09:00</updated>
+   <id>/public-source-code-repositories</id>
+   <content type="html">&lt;p&gt;This is collections of public source code for human pose estimation and 3D reconstruction from monocular video.&lt;/p&gt;
+
+&lt;h2&gt;Human Pose Estimation Source Code Repositories&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps&quot;&gt;Poselet Conditioned Pictorial Structures&lt;/a&gt;, L. Pishchulin &lt;em&gt;et al.&lt;/em&gt; 2013&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ps.is.tuebingen.mpg.de/project/Flowing_Puppets&quot;&gt;Flowing Puppets&lt;/a&gt;, Silvia Zuffi &lt;em&gt;et al.&lt;/em&gt; 2013&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.stat.ucla.edu/%7Erothrock/pages/cvpr13/index.html&quot;&gt;Compositional Grammar&lt;/a&gt;, B. Rothrock &lt;em&gt;et al.&lt;/em&gt; 2013&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ps.is.tuebingen.mpg.de/project/Deformable_Structures&quot;&gt;Deformable Structure&lt;/a&gt;, Silvia Zuffi &lt;em&gt;et al.&lt;/em&gt; 2012&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vision.grasp.upenn.edu/cgi-bin/index.php?n=VideoLearning.StretchableModelsCode&quot;&gt;Stretchable Model&lt;/a&gt;, Benjamin Sapp &lt;em&gt;et al.&lt;/em&gt; 2011&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ics.uci.edu/%7Eyyang8/research/pose/index.html&quot;&gt;Flexible Mixtures of Parts&lt;/a&gt;, &lt;a href=&quot;http://www.ics.uci.edu/%7Edramanan/&quot;&gt;FMP by D. Ramanan&lt;/a&gt;, Yi Yang and Deva Ramanan, 2011&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ics.uci.edu/%7Edramanan/&quot;&gt;N-Best Maximal Decoder&lt;/a&gt;, D. Park and D. Ramanan, 2011&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://groups.inf.ed.ac.uk/calvin/articulated_human_pose_estimation_code/&quot;&gt;2D articulated human pose estimation&lt;/a&gt;, M. Eichner &lt;em&gt;et al.&lt;/em&gt; 2011&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cs.bc.edu/%7Ehjiang/&quot;&gt;Human pose estimation&lt;/a&gt;, Hao Jiang, 2011&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cs.berkeley.edu/%7Elbourdev/poselets/&quot;&gt;Poselet and their application&lt;/a&gt;, Lubomir Bourdev &lt;em&gt;et al.&lt;/em&gt; 2010&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.d2.mpi-inf.mpg.de/node/381&quot;&gt;Pictorial Structures Revisited&lt;/a&gt;, M. Andriluka &lt;em&gt;et al.&lt;/em&gt; 2009&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Articulated Trajectory Reconstruction&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://jack.valmadre.net/projects/trajectory-filters/&quot;&gt;Trajectory Reconstruction using Filters&lt;/a&gt; J. Valmadre &lt;em&gt;et al.&lt;/em&gt; 2012&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://jack.valmadre.net/publications/&quot;&gt;Deterministic approach using Rigid Structure&lt;/a&gt; J. Valmadre and S. Lucey, 2010&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Temporal Alignment&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.f-zhou.com/ta.html&quot;&gt;Canonical Time Warping (CTW) and Generalized Time Warping (GTW)&lt;/a&gt;, Feng Zhou and Fernando De la Torre, 2012&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Dense Trajectory&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://lear.inrialpes.fr/src/deepmatching/&quot;&gt;Deep Matching and DeepFlow&lt;/a&gt;, P. Weinzaepfel &lt;em&gt;et al.&lt;/em&gt;, 2013&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://lear.inrialpes.fr/people/wang/improved_trajectories&quot;&gt;Improved Trajectories&lt;/a&gt;, H. Wang and C. Schmid, 2013&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://lear.inrialpes.fr/%7Ewang/dense_trajectories&quot;&gt;Dense Trajectories&lt;/a&gt;, H. Wang &lt;em&gt;et al.&lt;/em&gt;, 2011&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Optical Flow Source Code Repositories&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To be inserted.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>LaTex Package - pdfcomment</title>

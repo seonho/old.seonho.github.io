@@ -1,6 +1,19 @@
 [
   
     {
+  "title"    : "Public source code repositories",
+  "category" : "",
+  "tags"     : ["Research","Repository","Human Pose Estimation","Dense Trajectory","Temporal Alignment","3D","Reconstruction","Code","GitHub", null],
+  "href"     : "/public-source-code-repositories",
+  "date"     : {
+    "day"   : "26",
+    "month" : "May",
+    "year"  : "2014"
+  }
+}
+,
+  
+    {
   "title"    : "LaTex Package - pdfcomment",
   "category" : "",
   "tags"     : ["LaTeX","Package","pdfcomment", null],
@@ -16,7 +29,7 @@
     {
   "title"    : "Github에 Jekyll을 이용한 블로그 만들기",
   "category" : "",
-  "tags"     : ["Github","jekyll","blog", null],
+  "tags"     : ["GitHub","jekyll","blog", null],
   "href"     : "/github-pages-jekyll",
   "date"     : {
     "day"   : "01",
