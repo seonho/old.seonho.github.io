@@ -1,6 +1,19 @@
 [
   
     {
+  "title"    : "Package manager for OS X",
+  "category" : "blog",
+  "tags"     : ["OS X","brew","MacPorts","Package manager", null],
+  "href"     : "/package-manager-for-os-x",
+  "date"     : {
+    "day"   : "04",
+    "month" : "June",
+    "year"  : "2014"
+  }
+}
+,
+  
+    {
   "title"    : "Public source code repositories",
   "category" : "",
   "tags"     : ["Research","Repository","Human Pose Estimation","Dense Trajectory","Temporal Alignment","3D","Reconstruction","Code","GitHub", null],

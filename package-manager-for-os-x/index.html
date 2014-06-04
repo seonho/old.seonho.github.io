@@ -5,19 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--<meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" />-->
   <title>
-    Seonho's Blog
+    Package manager for OS X
+    
+    - Sébastien Saunier
     
   </title>
   <link rel="stylesheet" href="/css/site.css">
   <!--link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu+Mono|Asap:400,700,400italic">-->
   <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  
+  <meta name="description" content="" />
   <link rel="alternate" type="application/atom+xml" title="RSS Feed for Seonho Oh's blog" href="/feed.xml" />
 
   <!---->
 
   
 
+  
+    
   
 
   <script>
@@ -48,7 +52,7 @@
   <div class="header-container">
     <header class="inner">
   <nav>
-    <a class=" selected " href="/">Home</a>
+    <a class="" href="/">Home</a>
     <a class="" href="/about">About</a>
     <!--<a class="" href="/portfolio/">Portfolio</a>-->
     <!--<a class=" contact" href="/contact/">Contact</a>-->
@@ -75,106 +79,88 @@
 
   </div>
 
-  <section>
-  <ul class="posts">
-    
-    <div class="post">
-      <h1 class="post-title">
-        <a href="/latex-package-pdfcomment">
-          LaTex Package - pdfcomment
-        </a>
-      </h1>
+  
 
-      <span class="post-date">22 May 2014</span>
+<article>
+  <h1 class="inner">
+    Package manager for OS X
+  </h1>
 
-      <p><a href="http://www.ctan.org/pkg/pdfcomment">pdfcomment</a> 패키지는 LaTeX에서 pdf 파일에 annotation과 comment를 추가할 수 있게 해준다.</p>
+  <p class="meta">Wednesday 4 June 2014</p>
 
-<p>사용하려면 다음과 같이 하자.</p>
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="na">[author={편집자 이름}]</span><span class="nb">{</span>pdfcomment<span class="nb">}</span>
-<span class="c">% optional</span>
-<span class="k">\usepackage</span><span class="na">[rgb]</span><span class="nb">{</span>xcolor<span class="nb">}</span> <span class="c">% color 이름을 사용할 수 있도록 함</span>
-</code></pre></div>
-<p>몇 가지 명령을 소개하면</p>
+  <div class="post">
+    <h2>MacPorts vs. Homebrew</h2>
 
-<ul>
-<li>\pdfcomment: 현재 위치에 comment 추가.
+<p>정리 중</p>
 
-<ul>
-<li>avatar, icon, subject, author, opacity, open 등의 옵션 지정 가능.</li>
-</ul></li>
-<li>\pdfmarkupcomment: 선택된 영역에 밑줄, 취소선, highlight와 함께 comment를 추가.
-
-<ul>
-<li>markup, color를 지정할 수 있다.</li>
-</ul></li>
-</ul>
-
-<p>사용예</p>
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\pdfmarkupcomment</span><span class="na">[markup=StrikeOut, color=red]</span><span class="nb">{</span>이 문장은 취소선으로 표시됩니다.<span class="nb">}{</span>여기에 comment를 작성합니다.<span class="nb">}</span>
-
-<span class="k">\pdfmarkupcomment</span><span class="na">[markup=Underline, color=red]</span><span class="nb">{</span>이 문장은 밑줄 표시됩니다.<span class="nb">}{</span>여기에 comment를 작성합니다.<span class="nb">}</span>
-
-<span class="k">\pdfmarkupcomment</span><span class="na">[markup=Highlight, color=yellow]</span><span class="nb">{</span>이 문장은 highlight로 표시됩니다.<span class="nb">}{</span>여기에 comment를 작성합니다.<span class="nb">}</span>
-</code></pre></div>
 <h2>참고</h2>
 
-<p><a href="http://doeun.blogspot.kr/2010/10/latex-package-pdfcomment.html">도은님의 pdfcomment 소개</a></p>
+<p><a href="http://dalinaum-kr.tumblr.com/post/2986196227/hello-homebrew">잘가 MacPorts. 반갑습니다. Homebrew.</a><br>
+<a href="http://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/">Homebrew 로 OS X 패키지 관리하기</a></p>
 
 
+    
+    <ul class="tags">
+      Tag>
       
-      <ul class="tags">
-        Tags>
-        
-          <li><a href="/search/?tags=latex">LaTeX</a></li>
-        
-          <li><a href="/search/?tags=package">Package</a></li>
-        
-          <li><a href="/search/?tags=pdfcomment">pdfcomment</a></li>
-        
-      </ul>
+        <li><a href="/search/?tags=os x">OS X</a></li>
       
-    </div>
-
+        <li><a href="/search/?tags=brew">brew</a></li>
+      
+        <li><a href="/search/?tags=macports">MacPorts</a></li>
+      
+        <li><a href="/search/?tags=package manager">Package manager</a></li>
+      
+    </ul>
     
   </div>
 
-  <!--<div class="pagination">
-    
-      <a class="pagination-item older" href="/page4">Older</a>
-    
-    
-      
-        <a class="pagination-item newer" href="/page2">Newer</a>
-      
-    
-  </div>-->
-  <!-- Pagination links -->
-  <ul class="pagination clearfix">
-    
-      
-      <li><a href="/page2">Prev</a></li>
-      
-    
-    
-    <li><a href="/">1</a></li>
-    
-    
-      
-      <li><a href="/page2">2</a></li>
-      
-    
-      
-      <li><span class="active">3</span></li>
-      
-    
-      
-      <li><a href="/page4">4</a></li>
-      
-    
-    
-    <li><a href="/page4">Next</a></li>
-    
-  </ul>
+</article>
+
+<script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!-- tag, category search -->
+<script defer src="/scripts/alexpearce.js"></script>
+
+<!--<section class="post-footer-self-promotion inner">
+  <a href="https://twitter.com/intent/follow?screen_name=ssaunier" target="_blank">
+    <img class="avatar" src="/images/sebastien_saunier.jpg" />
+  </a>
+  <p>
+    Thanks for reading! Do you want to keep up with what I do?
+    <a href="https://twitter.com/intent/follow?screen_name=ssaunier">Follow me on Twitter</a> or better,
+
+    <form action="http://saunier.us8.list-manage.com/subscribe/post?u=3e666bd315f84f1bbdfe80c3b&amp;id=0494cf26c5" method="post"target="_blank">
+      <input type="email" class="form-control" name="EMAIL" placeholder="Enter your email address"
+        ><input type="submit" value="Subscribe to my newsletter" >
+      Fear not, I hate spam too.
+    </form>
+  </p>
+</section>
+-->
+<div class="separator"></div>
+
+<section class="comments inner">
+  
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'seonho'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 </section>
 
   
