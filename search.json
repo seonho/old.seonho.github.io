@@ -1,6 +1,19 @@
 [
   
     {
+  "title"    : "LaTeX에서 draft 문서 표시하기",
+  "category" : "",
+  "tags"     : ["LaTeX","Package","draftwatermark", null],
+  "href"     : "/latex-package-draftwatermark",
+  "date"     : {
+    "day"   : "16",
+    "month" : "June",
+    "year"  : "2014"
+  }
+}
+,
+  
+    {
   "title"    : "Package manager for OS X",
   "category" : "blog",
   "tags"     : ["OS X","brew","MacPorts","Package manager", null],
@@ -27,7 +40,7 @@
 ,
   
     {
-  "title"    : "LaTex Package - pdfcomment",
+  "title"    : "LaTex에서 생성할 pdf 문서에 comment 추가하기",
   "category" : "",
   "tags"     : ["LaTeX","Package","pdfcomment", null],
   "href"     : "/latex-package-pdfcomment",

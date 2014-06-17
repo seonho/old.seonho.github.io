@@ -80,42 +80,56 @@
     
     <div class="post">
       <h1 class="post-title">
-        <a href="/github-pages-jekyll">
-          Github에 Jekyll을 이용한 블로그 만들기
+        <a href="/latex-package-pdfcomment">
+          LaTex에서 생성할 pdf 문서에 comment 추가하기
         </a>
       </h1>
 
-      <span class="post-date">01 May 2014</span>
+      <span class="post-date">22 May 2014</span>
 
-      <p><a href="http://github.com">Github</a>에서는 Pages라는 기능을 제공하는데,</p>
+      <p><a href="http://www.ctan.org/pkg/pdfcomment">pdfcomment</a> 패키지는 LaTeX에서 pdf 파일에 annotation과 comment를 추가할 수 있게 해준다.</p>
 
-<p>사용자 혹은 프로젝트를 위한 웹페이지를 무료로 사용할 수 있다.</p>
-
-<p>구글링을 해보니 여기에 <a href="http://jekyllrb.com">Jekyll</a>을 이용해서 블로그를 만들 수 있다고 한다.</p>
-
-<p>그래서 나도 한 번 만들어보았다.</p>
-
-<p>방법은 아래의 자료를 참고하자.</p>
-
-<h2>참고</h2>
+<p>사용하려면 다음과 같이 하자.</p>
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="na">[author={편집자 이름}]</span><span class="nb">{</span>pdfcomment<span class="nb">}</span>
+<span class="c">% optional</span>
+<span class="k">\usepackage</span><span class="na">[rgb]</span><span class="nb">{</span>xcolor<span class="nb">}</span> <span class="c">% color 이름을 사용할 수 있도록 함</span>
+</code></pre></div>
+<p>몇 가지 명령을 소개하면</p>
 
 <ul>
-<li><a href="http://joshualande.com/jekyll-github-pages-poole">How I Created a Beatiful and Minimal Blog Using Jekyll, Github Pages, and poole</a></li>
-<li><a href="http://nolboo.github.io/blog/2013/10/15/free-blog-with-github-jekyll/">지킬로 깃허브에 무료 블로그 만들기</a></li>
-<li><a href="http://dogfeet.github.io/articles/2012/github-pages.html">Github의 페이지 기능 이용하기</a></li>
-<li><a href="http://static-blog-sample.libsora.so/posts/static-blog-sample/">Github Pages와 travis-ci를 이용한 정적 블로그 구축하기</a></li>
+<li>\pdfcomment: 현재 위치에 comment 추가.
+
+<ul>
+<li>avatar, icon, subject, author, opacity, open 등의 옵션 지정 가능.</li>
+</ul></li>
+<li>\pdfmarkupcomment: 선택된 영역에 밑줄, 취소선, highlight와 함께 comment를 추가.
+
+<ul>
+<li>markup, color를 지정할 수 있다.</li>
+</ul></li>
 </ul>
+
+<p>사용예</p>
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\pdfmarkupcomment</span><span class="na">[markup=StrikeOut, color=red]</span><span class="nb">{</span>이 문장은 취소선으로 표시됩니다.<span class="nb">}{</span>여기에 comment를 작성합니다.<span class="nb">}</span>
+
+<span class="k">\pdfmarkupcomment</span><span class="na">[markup=Underline, color=red]</span><span class="nb">{</span>이 문장은 밑줄 표시됩니다.<span class="nb">}{</span>여기에 comment를 작성합니다.<span class="nb">}</span>
+
+<span class="k">\pdfmarkupcomment</span><span class="na">[markup=Highlight, color=yellow]</span><span class="nb">{</span>이 문장은 highlight로 표시됩니다.<span class="nb">}{</span>여기에 comment를 작성합니다.<span class="nb">}</span>
+</code></pre></div>
+<h2>참고</h2>
+
+<p><a href="http://doeun.blogspot.kr/2010/10/latex-package-pdfcomment.html">도은님의 pdfcomment 소개</a></p>
 
 
       
       <ul class="tags">
         Tags>
         
-          <li><a href="/search/?tags=github">GitHub</a></li>
+          <li><a href="/search/?tags=latex">LaTeX</a></li>
         
-          <li><a href="/search/?tags=jekyll">jekyll</a></li>
+          <li><a href="/search/?tags=package">Package</a></li>
         
-          <li><a href="/search/?tags=blog">blog</a></li>
+          <li><a href="/search/?tags=pdfcomment">pdfcomment</a></li>
         
       </ul>
       
@@ -126,7 +140,7 @@
 
   <!--<div class="pagination">
     
-      <span class="pagination-item older">Older</span>
+      <a class="pagination-item older" href="/page5">Older</a>
     
     
       
@@ -157,8 +171,12 @@
       <li><span class="active">4</span></li>
       
     
+      
+      <li><a href="/page5">5</a></li>
+      
     
-    <li><span class="disabled">Next</span></li>
+    
+    <li><a href="/page5">Next</a></li>
     
   </ul>
 </section>

@@ -4,13 +4,27 @@
  <title>Seonho Oh</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-06-13T17:42:59+09:00</updated>
+ <updated>2014-06-17T18:25:20+09:00</updated>
  <id></id>
  <author>
    <name>Seonho Oh</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>LaTeX에서 draft 문서 표시하기</title>
+   <link href="/latex-package-draftwatermark"/>
+   <updated>2014-06-16T00:00:00+09:00</updated>
+   <id>/latex-draft-</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.ctan.org/tex-archive/macros/latex/contrib/draftwatermark&quot;&gt;draftwatermark&lt;/a&gt; 패키지는 LaTeX에서 draft watermark를 추가할 수 있게 해준다.&lt;/p&gt;
+
+&lt;p&gt;아래와 같이 사용하면 되겠다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;draftwatermark&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\SetWatermarkAngle&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;45&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\SetWatermarkText&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;DRAFT&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
  
  <entry>
    <title>Package manager for OS X</title>
@@ -81,7 +95,7 @@
  </entry>
  
  <entry>
-   <title>LaTex Package - pdfcomment</title>
+   <title>LaTex에서 생성할 pdf 문서에 comment 추가하기</title>
    <link href="/latex-package-pdfcomment"/>
    <updated>2014-05-22T00:00:00+09:00</updated>
    <id>/latex-package-pdfcomment</id>
