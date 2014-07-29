@@ -80,56 +80,80 @@
     
     <div class="post">
       <h1 class="post-title">
-        <a href="/latex-package-pdfcomment">
-          LaTex에서 생성할 pdf 문서에 comment 추가하기
+        <a href="/public-source-code-repositories">
+          Public source code repositories
         </a>
       </h1>
 
-      <span class="post-date">22 May 2014</span>
+      <span class="post-date">26 May 2014</span>
 
-      <p><a href="http://www.ctan.org/pkg/pdfcomment">pdfcomment</a> 패키지는 LaTeX에서 pdf 파일에 annotation과 comment를 추가할 수 있게 해준다.</p>
+      <p>This is collections of public source code for human pose estimation and 3D reconstruction from monocular video.</p>
 
-<p>사용하려면 다음과 같이 하자.</p>
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="na">[author={편집자 이름}]</span><span class="nb">{</span>pdfcomment<span class="nb">}</span>
-<span class="c">% optional</span>
-<span class="k">\usepackage</span><span class="na">[rgb]</span><span class="nb">{</span>xcolor<span class="nb">}</span> <span class="c">% color 이름을 사용할 수 있도록 함</span>
-</code></pre></div>
-<p>몇 가지 명령을 소개하면</p>
+<h2>Human Pose Estimation Source Code Repositories</h2>
 
 <ul>
-<li>\pdfcomment: 현재 위치에 comment 추가.
-
-<ul>
-<li>avatar, icon, subject, author, opacity, open 등의 옵션 지정 가능.</li>
-</ul></li>
-<li>\pdfmarkupcomment: 선택된 영역에 밑줄, 취소선, highlight와 함께 comment를 추가.
-
-<ul>
-<li>markup, color를 지정할 수 있다.</li>
-</ul></li>
+<li><a href="https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps">Poselet Conditioned Pictorial Structures</a>, L. Pishchulin <em>et al.</em> 2013</li>
+<li><a href="http://ps.is.tuebingen.mpg.de/project/Flowing_Puppets">Flowing Puppets</a>, Silvia Zuffi <em>et al.</em> 2013</li>
+<li><a href="http://www.stat.ucla.edu/%7Erothrock/pages/cvpr13/index.html">Compositional Grammar</a>, B. Rothrock <em>et al.</em> 2013</li>
+<li><a href="http://ps.is.tuebingen.mpg.de/project/Deformable_Structures">Deformable Structure</a>, Silvia Zuffi <em>et al.</em> 2012</li>
+<li><a href="http://vision.grasp.upenn.edu/cgi-bin/index.php?n=VideoLearning.StretchableModelsCode">Stretchable Model</a>, Benjamin Sapp <em>et al.</em> 2011</li>
+<li><a href="http://www.ics.uci.edu/%7Eyyang8/research/pose/index.html">Flexible Mixtures of Parts</a>, <a href="http://www.ics.uci.edu/%7Edramanan/">FMP by D. Ramanan</a>, Yi Yang and Deva Ramanan, 2011</li>
+<li><a href="http://www.ics.uci.edu/%7Edramanan/">N-Best Maximal Decoder</a>, D. Park and D. Ramanan, 2011</li>
+<li><a href="http://groups.inf.ed.ac.uk/calvin/articulated_human_pose_estimation_code/">2D articulated human pose estimation</a>, M. Eichner <em>et al.</em> 2011</li>
+<li><a href="http://www.cs.bc.edu/%7Ehjiang/">Human pose estimation</a>, Hao Jiang, 2011</li>
+<li><a href="http://www.cs.berkeley.edu/%7Elbourdev/poselets/">Poselet and their application</a>, Lubomir Bourdev <em>et al.</em> 2010</li>
+<li><a href="http://www.d2.mpi-inf.mpg.de/node/381">Pictorial Structures Revisited</a>, M. Andriluka <em>et al.</em> 2009</li>
 </ul>
 
-<p>사용예</p>
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\pdfmarkupcomment</span><span class="na">[markup=StrikeOut, color=red]</span><span class="nb">{</span>이 문장은 취소선으로 표시됩니다.<span class="nb">}{</span>여기에 comment를 작성합니다.<span class="nb">}</span>
+<h2>Articulated Trajectory Reconstruction</h2>
 
-<span class="k">\pdfmarkupcomment</span><span class="na">[markup=Underline, color=red]</span><span class="nb">{</span>이 문장은 밑줄 표시됩니다.<span class="nb">}{</span>여기에 comment를 작성합니다.<span class="nb">}</span>
+<ul>
+<li><a href="http://jack.valmadre.net/projects/trajectory-filters/">Trajectory Reconstruction using Filters</a> J. Valmadre <em>et al.</em> 2012</li>
+<li><a href="http://jack.valmadre.net/publications/">Deterministic approach using Rigid Structure</a> J. Valmadre and S. Lucey, 2010</li>
+</ul>
 
-<span class="k">\pdfmarkupcomment</span><span class="na">[markup=Highlight, color=yellow]</span><span class="nb">{</span>이 문장은 highlight로 표시됩니다.<span class="nb">}{</span>여기에 comment를 작성합니다.<span class="nb">}</span>
-</code></pre></div>
-<h2>참고</h2>
+<h2>Temporal Alignment</h2>
 
-<p><a href="http://doeun.blogspot.kr/2010/10/latex-package-pdfcomment.html">도은님의 pdfcomment 소개</a></p>
+<ul>
+<li><a href="http://www.f-zhou.com/ta.html">Canonical Time Warping (CTW) and Generalized Time Warping (GTW)</a>, Feng Zhou and Fernando De la Torre, 2012</li>
+</ul>
+
+<h2>Dense Trajectory</h2>
+
+<ul>
+<li><a href="http://lear.inrialpes.fr/src/deepmatching/">Deep Matching and DeepFlow</a>, P. Weinzaepfel <em>et al.</em>, 2013</li>
+<li><a href="http://lear.inrialpes.fr/people/wang/improved_trajectories">Improved Trajectories</a>, H. Wang and C. Schmid, 2013</li>
+<li><a href="http://lear.inrialpes.fr/%7Ewang/dense_trajectories">Dense Trajectories</a>, H. Wang <em>et al.</em>, 2011</li>
+</ul>
+
+<h2>Optical Flow Source Code Repositories</h2>
+
+<ul>
+<li>To be inserted.</li>
+</ul>
 
 
       
       <ul class="tags">
         Tags>
         
-          <li><a href="/search/?tags=latex">LaTeX</a></li>
+          <li><a href="/search/?tags=research">Research</a></li>
         
-          <li><a href="/search/?tags=package">Package</a></li>
+          <li><a href="/search/?tags=repository">Repository</a></li>
         
-          <li><a href="/search/?tags=pdfcomment">pdfcomment</a></li>
+          <li><a href="/search/?tags=human pose estimation">Human Pose Estimation</a></li>
+        
+          <li><a href="/search/?tags=dense trajectory">Dense Trajectory</a></li>
+        
+          <li><a href="/search/?tags=temporal alignment">Temporal Alignment</a></li>
+        
+          <li><a href="/search/?tags=3d">3D</a></li>
+        
+          <li><a href="/search/?tags=reconstruction">Reconstruction</a></li>
+        
+          <li><a href="/search/?tags=code">Code</a></li>
+        
+          <li><a href="/search/?tags=github">GitHub</a></li>
         
       </ul>
       
@@ -173,6 +197,10 @@
     
       
       <li><a href="/page5">5</a></li>
+      
+    
+      
+      <li><a href="/page6">6</a></li>
       
     
     

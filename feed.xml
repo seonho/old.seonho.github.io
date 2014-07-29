@@ -4,13 +4,36 @@
  <title>Seonho Oh</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-06-17T18:25:20+09:00</updated>
+ <updated>2014-07-29T10:22:42+09:00</updated>
  <id></id>
  <author>
    <name>Seonho Oh</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Markdown을 이용한 연구 포스팅 작성하기 예제</title>
+   <link href="/markdown-post-tutorial"/>
+   <updated>2014-07-29T00:00:00+09:00</updated>
+   <id>/markdown-post-tutorial</id>
+   <content type="html">&lt;p&gt;Following code is typical header for research post.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;---
+layout: post
+category: research
+title: Your research title, e.g. Visual Surveillance.
+thumbnail: Your research thumbnail will be shown in the research page, e.g. /img/research/vissurv/thumbnail.png
+permalink: URL to be linked or generated, e.g. /research/vissurv/
+---
+
+Your contents here
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We use &lt;code&gt;markdown&lt;/code&gt; for ease of use.&lt;/p&gt;
+
+&lt;p&gt;For more details, please see &lt;a href=&quot;https://help.github.com/articles/github-flavored-markdown&quot;&gt;GitHub Flavored Markdown&lt;/a&gt; and &lt;a href=&quot;https://dl.dropboxusercontent.com/u/6516457/blog/data/2012-08-01-visual-surveillance.md&quot;&gt;my example&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>LaTeX에서 draft 문서 표시하기</title>

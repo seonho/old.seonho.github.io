@@ -1,6 +1,19 @@
 [
   
     {
+  "title"    : "Markdown을 이용한 연구 포스팅 작성하기 예제",
+  "category" : "",
+  "tags"     : ["Markdown","GFM", null],
+  "href"     : "/markdown-post-tutorial",
+  "date"     : {
+    "day"   : "29",
+    "month" : "July",
+    "year"  : "2014"
+  }
+}
+,
+  
+    {
   "title"    : "LaTeX에서 draft 문서 표시하기",
   "category" : "",
   "tags"     : ["LaTeX","Package","draftwatermark", null],
