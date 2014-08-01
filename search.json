@@ -1,6 +1,19 @@
 [
   
     {
+  "title"    : "jekyll-scholar 사용하기",
+  "category" : "",
+  "tags"     : ["Jekyll","Plugins","jekyll-scholar","Markdown", null],
+  "href"     : "/how-to-use-jekyll-scholar",
+  "date"     : {
+    "day"   : "31",
+    "month" : "July",
+    "year"  : "2014"
+  }
+}
+,
+  
+    {
   "title"    : "Markdown을 이용한 연구 포스팅 작성하기 예제",
   "category" : "",
   "tags"     : ["Markdown","GFM", null],
