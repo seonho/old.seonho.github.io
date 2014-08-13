@@ -1,198 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Seonho Oh</title>
- <link href="/atom.xml" rel="self"/>
- <link href="/"/>
- <updated>2014-08-01T11:02:07+09:00</updated>
- <id></id>
+ <title>{{ site.title }}</title>
+ <link href="{{ site.url }}/atom.xml" rel="self"/>
+ <link href="{{ site.url }}/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.url }}</id>
  <author>
-   <name>Seonho Oh</name>
-   <email></email>
+   <name>{{ site.author.name }}</name>
+   <email>{{ site.author.email }}</email>
  </author>
 
- 
+ {% for post in site.posts %}
  <entry>
-   <title>jekyll-scholar 사용하기</title>
-   <link href="/how-to-use-jekyll-scholar"/>
-   <updated>2014-07-31T00:00:00+09:00</updated>
-   <id>/how-to-use-jekyll-scholar</id>
-   <content type="html">&lt;p&gt;논문을 인용해 봅시다&lt;a href=&quot;#shoh2013fit&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--1. &lt;span id=&quot;shoh2013fit&quot;&gt;S. H. Oh, S. Javed, and S. K. Jung, “Foreground Object Detection and Tracking for Visual Surveillance System: A Hybrid Approach,” in &lt;i&gt;Frontiers of Information Technology (FIT), 2013 11th International Conference on&lt;/i&gt;, 2013, pp. 13–18.&lt;/span&gt;--&gt;
-
-&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;shoh2013fit&quot;&gt;S. H. Oh, S. Javed, and S. K. Jung, “Foreground Object Detection and Tracking for Visual Surveillance System: A Hybrid Approach,” in &lt;i&gt;Frontiers of Information Technology (FIT), 2013 11th International Conference on&lt;/i&gt;, 2013, pp. 13–18.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
-</content>
+   <title>{{ post.title }}</title>
+   <link href="{{ site.url }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ site.url }}{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
- 
- <entry>
-   <title>Markdown을 이용한 연구 포스팅 작성하기 예제</title>
-   <link href="/markdown-post-tutorial"/>
-   <updated>2014-07-29T00:00:00+09:00</updated>
-   <id>/markdown-post-tutorial</id>
-   <content type="html">&lt;p&gt;Following code is typical header for research post.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;layout: post
-category: research
-title: Your research title, e.g. Visual Surveillance.
-thumbnail: Your research thumbnail will be shown in the research page, e.g. /img/research/vissurv/thumbnail.png
-permalink: URL to be linked or generated, e.g. /research/vissurv/
-
-Your contents here
-...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;We use &lt;code&gt;markdown&lt;/code&gt; for ease of use.&lt;/p&gt;
-
-&lt;p&gt;For more details, please see &lt;a href=&quot;https://help.github.com/articles/github-flavored-markdown&quot;&gt;GitHub Flavored Markdown&lt;/a&gt; and &lt;a href=&quot;https://dl.dropboxusercontent.com/u/6516457/blog/data/2012-08-01-visual-surveillance.md&quot;&gt;my example&lt;/a&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>LaTeX에서 draft 문서 표시하기</title>
-   <link href="/latex-package-draftwatermark"/>
-   <updated>2014-06-16T00:00:00+09:00</updated>
-   <id>/latex-draft-</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.ctan.org/tex-archive/macros/latex/contrib/draftwatermark&quot;&gt;draftwatermark&lt;/a&gt; 패키지는 LaTeX에서 draft watermark를 추가할 수 있게 해준다.&lt;/p&gt;
-
-&lt;p&gt;아래와 같이 사용하면 되겠다.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;draftwatermark&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;\SetWatermarkAngle&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;45&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;\SetWatermarkText&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;DRAFT&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
- </entry>
- 
- <entry>
-   <title>Package manager for OS X</title>
-   <link href="/package-manager-for-os-x"/>
-   <updated>2014-06-04T00:00:00+09:00</updated>
-   <id>/package-manager-for-os-x</id>
-   <content type="html">&lt;h2&gt;MacPorts vs. Homebrew&lt;/h2&gt;
-
-&lt;p&gt;정리 중&lt;/p&gt;
-
-&lt;h2&gt;참고&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dalinaum-kr.tumblr.com/post/2986196227/hello-homebrew&quot;&gt;잘가 MacPorts. 반갑습니다. Homebrew.&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/&quot;&gt;Homebrew 로 OS X 패키지 관리하기&lt;/a&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Public source code repositories</title>
-   <link href="/public-source-code-repositories"/>
-   <updated>2014-05-26T00:00:00+09:00</updated>
-   <id>/public-source-code-repositories</id>
-   <content type="html">&lt;p&gt;This is collections of public source code for human pose estimation and 3D reconstruction from monocular video.&lt;/p&gt;
-
-&lt;h2&gt;Human Pose Estimation Source Code Repositories&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps&quot;&gt;Poselet Conditioned Pictorial Structures&lt;/a&gt;, L. Pishchulin &lt;em&gt;et al.&lt;/em&gt; 2013&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://ps.is.tuebingen.mpg.de/project/Flowing_Puppets&quot;&gt;Flowing Puppets&lt;/a&gt;, Silvia Zuffi &lt;em&gt;et al.&lt;/em&gt; 2013&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.stat.ucla.edu/%7Erothrock/pages/cvpr13/index.html&quot;&gt;Compositional Grammar&lt;/a&gt;, B. Rothrock &lt;em&gt;et al.&lt;/em&gt; 2013&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://ps.is.tuebingen.mpg.de/project/Deformable_Structures&quot;&gt;Deformable Structure&lt;/a&gt;, Silvia Zuffi &lt;em&gt;et al.&lt;/em&gt; 2012&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://vision.grasp.upenn.edu/cgi-bin/index.php?n=VideoLearning.StretchableModelsCode&quot;&gt;Stretchable Model&lt;/a&gt;, Benjamin Sapp &lt;em&gt;et al.&lt;/em&gt; 2011&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ics.uci.edu/%7Eyyang8/research/pose/index.html&quot;&gt;Flexible Mixtures of Parts&lt;/a&gt;, &lt;a href=&quot;http://www.ics.uci.edu/%7Edramanan/&quot;&gt;FMP by D. Ramanan&lt;/a&gt;, Yi Yang and Deva Ramanan, 2011&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ics.uci.edu/%7Edramanan/&quot;&gt;N-Best Maximal Decoder&lt;/a&gt;, D. Park and D. Ramanan, 2011&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://groups.inf.ed.ac.uk/calvin/articulated_human_pose_estimation_code/&quot;&gt;2D articulated human pose estimation&lt;/a&gt;, M. Eichner &lt;em&gt;et al.&lt;/em&gt; 2011&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.cs.bc.edu/%7Ehjiang/&quot;&gt;Human pose estimation&lt;/a&gt;, Hao Jiang, 2011&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.cs.berkeley.edu/%7Elbourdev/poselets/&quot;&gt;Poselet and their application&lt;/a&gt;, Lubomir Bourdev &lt;em&gt;et al.&lt;/em&gt; 2010&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.d2.mpi-inf.mpg.de/node/381&quot;&gt;Pictorial Structures Revisited&lt;/a&gt;, M. Andriluka &lt;em&gt;et al.&lt;/em&gt; 2009&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Articulated Trajectory Reconstruction&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://jack.valmadre.net/projects/trajectory-filters/&quot;&gt;Trajectory Reconstruction using Filters&lt;/a&gt; J. Valmadre &lt;em&gt;et al.&lt;/em&gt; 2012&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://jack.valmadre.net/publications/&quot;&gt;Deterministic approach using Rigid Structure&lt;/a&gt; J. Valmadre and S. Lucey, 2010&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Temporal Alignment&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.f-zhou.com/ta.html&quot;&gt;Canonical Time Warping (CTW) and Generalized Time Warping (GTW)&lt;/a&gt;, Feng Zhou and Fernando De la Torre, 2012&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Dense Trajectory&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://lear.inrialpes.fr/src/deepmatching/&quot;&gt;Deep Matching and DeepFlow&lt;/a&gt;, P. Weinzaepfel &lt;em&gt;et al.&lt;/em&gt;, 2013&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://lear.inrialpes.fr/people/wang/improved_trajectories&quot;&gt;Improved Trajectories&lt;/a&gt;, H. Wang and C. Schmid, 2013&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://lear.inrialpes.fr/%7Ewang/dense_trajectories&quot;&gt;Dense Trajectories&lt;/a&gt;, H. Wang &lt;em&gt;et al.&lt;/em&gt;, 2011&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Optical Flow Source Code Repositories&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;To be inserted.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>LaTex에서 생성할 pdf 문서에 comment 추가하기</title>
-   <link href="/latex-package-pdfcomment"/>
-   <updated>2014-05-22T00:00:00+09:00</updated>
-   <id>/latex-package-pdfcomment</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.ctan.org/pkg/pdfcomment&quot;&gt;pdfcomment&lt;/a&gt; 패키지는 LaTeX에서 pdf 파일에 annotation과 comment를 추가할 수 있게 해준다.&lt;/p&gt;
-
-&lt;p&gt;사용하려면 다음과 같이 하자.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;[author={편집자 이름}]&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;pdfcomment&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;% optional&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;[rgb]&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;xcolor&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% color 이름을 사용할 수 있도록 함&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;몇 가지 명령을 소개하면&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;\pdfcomment: 현재 위치에 comment 추가.
-
-&lt;ul&gt;
-&lt;li&gt;avatar, icon, subject, author, opacity, open 등의 옵션 지정 가능.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;\pdfmarkupcomment: 선택된 영역에 밑줄, 취소선, highlight와 함께 comment를 추가.
-
-&lt;ul&gt;
-&lt;li&gt;markup, color를 지정할 수 있다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;사용예&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;k&quot;&gt;\pdfmarkupcomment&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;[markup=StrikeOut, color=red]&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;이 문장은 취소선으로 표시됩니다.&lt;span class=&quot;nb&quot;&gt;}{&lt;/span&gt;여기에 comment를 작성합니다.&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;\pdfmarkupcomment&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;[markup=Underline, color=red]&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;이 문장은 밑줄 표시됩니다.&lt;span class=&quot;nb&quot;&gt;}{&lt;/span&gt;여기에 comment를 작성합니다.&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;\pdfmarkupcomment&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;[markup=Highlight, color=yellow]&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;이 문장은 highlight로 표시됩니다.&lt;span class=&quot;nb&quot;&gt;}{&lt;/span&gt;여기에 comment를 작성합니다.&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;참고&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://doeun.blogspot.kr/2010/10/latex-package-pdfcomment.html&quot;&gt;도은님의 pdfcomment 소개&lt;/a&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Github에 Jekyll을 이용한 블로그 만들기</title>
-   <link href="/github-pages-jekyll"/>
-   <updated>2014-05-01T00:00:00+09:00</updated>
-   <id>/github-pages-jekyll</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com&quot;&gt;Github&lt;/a&gt;에서는 Pages라는 기능을 제공하는데,&lt;/p&gt;
-
-&lt;p&gt;사용자 혹은 프로젝트를 위한 웹페이지를 무료로 사용할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;구글링을 해보니 여기에 &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;을 이용해서 블로그를 만들 수 있다고 한다.&lt;/p&gt;
-
-&lt;p&gt;그래서 나도 한 번 만들어보았다.&lt;/p&gt;
-
-&lt;p&gt;방법은 아래의 자료를 참고하자.&lt;/p&gt;
-
-&lt;h2&gt;참고&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://joshualande.com/jekyll-github-pages-poole&quot;&gt;How I Created a Beatiful and Minimal Blog Using Jekyll, Github Pages, and poole&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://nolboo.github.io/blog/2013/10/15/free-blog-with-github-jekyll/&quot;&gt;지킬로 깃허브에 무료 블로그 만들기&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://dogfeet.github.io/articles/2012/github-pages.html&quot;&gt;Github의 페이지 기능 이용하기&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://static-blog-sample.libsora.so/posts/static-blog-sample/&quot;&gt;Github Pages와 travis-ci를 이용한 정적 블로그 구축하기&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
- </entry>
- 
+ {% endfor %}
 
 </feed>
