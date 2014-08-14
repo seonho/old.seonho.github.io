@@ -4,7 +4,7 @@
  <title>Seonho Oh</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-08-13T11:43:04+09:00</updated>
+ <updated>2014-08-14T11:55:14+09:00</updated>
  <id></id>
  <author>
    <name>Seonho Oh</name>
@@ -63,11 +63,11 @@
    <link href="/how-to-use-jekyll-scholar"/>
    <updated>2014-07-31T00:00:00+09:00</updated>
    <id>/how-to-use-jekyll-scholar</id>
-   <content type="html">&lt;p&gt;논문을 인용해 봅시다 &lt;a href=&quot;#shoh2013fit&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;논문을 인용해 봅시다 &lt;a href=&quot;#oh2013fit&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3&gt;Reference&lt;/h3&gt;
 
-&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;shoh2013fit&quot;&gt;S. H. Oh, S. Javed, and S. K. Jung, “Foreground Object Detection and Tracking for Visual Surveillance System: A Hybrid Approach,” in &lt;i&gt;Frontiers of Information Technology (FIT), 2013 11th International Conference on&lt;/i&gt;, 2013, pp. 13–18.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;oh2013fit&quot;&gt;S. H. Oh, S. Javed, and S. K. Jung, “Foreground Object Detection and Tracking for Visual Surveillance System: A Hybrid Approach,” in &lt;i&gt;Frontiers of Information Technology (FIT), 2013 11th International Conference on&lt;/i&gt;, 2013, pp. 13–18.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
 </content>
  </entry>
  
