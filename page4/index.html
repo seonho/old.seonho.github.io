@@ -81,30 +81,38 @@
     
     <div class="post">
       <h1 class="post-title">
-        <a href="/latex-package-draftwatermark">
-          LaTeX에서 draft 문서 표시하기
+        <a href="/markdown-post-tutorial">
+          Markdown을 이용한 연구 포스팅 작성하기 예제
         </a>
       </h1>
 
-      <span class="post-date">16 Jun 2014</span>
+      <span class="post-date">29 Jul 2014</span>
 
-      <p><a href="http://www.ctan.org/tex-archive/macros/latex/contrib/draftwatermark">draftwatermark</a> 패키지는 LaTeX에서 draft watermark를 추가할 수 있게 해준다.</p>
+      <p>Following code is typical header for research post.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">--- header begins with ---
+layout: post
+category: research
+title: Visual Surveillance
+title: Your research title, e.g., Visual Surveillance.
+teaser: Your research thumbnail will be shown in the research page, e.g., /img/research/vissurv/teaser.png
+collaborators: [Seon Ho On, Sajid Javed, Jae Ho Goo, Soon Ki Jung]
+--- header ends with ---
 
-<p>아래와 같이 사용하면 되겠다.</p>
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="nb">{</span>draftwatermark<span class="nb">}</span>
-<span class="k">\SetWatermarkAngle</span><span class="nb">{</span>45<span class="nb">}</span>
-<span class="k">\SetWatermarkText</span><span class="nb">{</span>DRAFT<span class="nb">}</span>
+Your contents here
+...
 </code></pre></div>
+<p>We use <code>markdown</code> for ease of use.</p>
+
+<p>For more details, please see <a href="https://help.github.com/articles/github-flavored-markdown">GitHub Flavored Markdown</a> and <a href="https://dl.dropboxusercontent.com/u/6516457/blog/data/2012-08-01-visual-surveillance.md">my example</a></p>
+
 
       
       <ul class="tags">
         Tags>
         
-          <li><a href="/search/?tags=latex">LaTeX</a></li>
+          <li><a href="/search/?tags=markdown">Markdown</a></li>
         
-          <li><a href="/search/?tags=package">Package</a></li>
-        
-          <li><a href="/search/?tags=draftwatermark">draftwatermark</a></li>
+          <li><a href="/search/?tags=gfm">GFM</a></li>
         
       </ul>
       
@@ -160,6 +168,10 @@
     
       
       <li><a href="/page8">8</a></li>
+      
+    
+      
+      <li><a href="/page9">9</a></li>
       
     
     
