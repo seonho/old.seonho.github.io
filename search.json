@@ -1,10 +1,10 @@
 [
   
     {
-  "title"    : "How To Print Building Floor Plan",
+  "title"    : "건물 도면 출력하기",
   "category" : "",
-  "tags"     : [ null],
-  "href"     : "/2014/08/26/how-to-print-building-floor-plan/",
+  "tags"     : ["건물","도면","국토교통부","세움터","전유부","총괄표제부","표제부", null],
+  "href"     : "/how-to-print-building-floor-plan",
   "date"     : {
     "day"   : "26",
     "month" : "August",
