@@ -81,62 +81,48 @@
     
     <div class="post">
       <h1 class="post-title">
-        <a href="/human-pose-dataset">
-          Human Pose Dataset
+        <a href="/mex-compile-error-unknown-type-name-char16_t">
+          MEX compile error&#58; unknown type name 'char16_t'
         </a>
       </h1>
 
-      <span class="post-date">13 Aug 2014</span>
+      <span class="post-date">14 Aug 2014</span>
 
-      <h1>Datasets</h1>
+      <p>아래와 같은 오류가 나온다면</p>
+<div class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="n">In</span> <span class="n">file</span> <span class="n">included</span> <span class="n">from</span> <span class="o">/</span><span class="n">Applications</span><span class="o">/</span><span class="n">MATLAB_R2013a</span><span class="p">.</span><span class="n">app</span><span class="o">/</span><span class="n">extern</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">mex</span><span class="p">.</span><span class="n">h</span><span class="p">:</span><span class="mi">58</span><span class="p">:</span>
+<span class="n">In</span> <span class="n">file</span> <span class="n">included</span> <span class="n">from</span> <span class="o">/</span><span class="n">Applications</span><span class="o">/</span><span class="n">MATLAB_R2013a</span><span class="p">.</span><span class="n">app</span><span class="o">/</span><span class="n">extern</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">matrix</span><span class="p">.</span><span class="n">h</span><span class="p">:</span><span class="mi">294</span><span class="p">:</span>
+<span class="o">/</span><span class="n">Applications</span><span class="o">/</span><span class="n">MATLAB_R2013a</span><span class="p">.</span><span class="n">app</span><span class="o">/</span><span class="n">extern</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">tmwtypes</span><span class="p">.</span><span class="n">h</span><span class="p">:</span><span class="mi">819</span><span class="p">:</span><span class="mi">9</span><span class="p">:</span> <span class="n">error</span><span class="p">:</span> <span class="n">unknown</span> <span class="n">type</span> <span class="n">name</span> <span class="s">&#39;char16_t&#39;</span>
+<span class="n">typedef</span> <span class="n">char16_t</span> <span class="n">CHAR16_T</span><span class="p">;</span>
+</code></pre></div>
+<p>다음과 같이 하자.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cd /Applications/MATLAB_R2013a.app/bin
+system(&#39;cp mexopts.sh mexopts.org.sh&#39;)
+edit mexopts.sh
+</code></pre></div>
+<p>CXXFLAGS를 찾아서 끝부분에 <code>-std=c++11</code>을 추가한다.</p>
 
-<h2>Human Pose Datasets</h2>
+<p>저장 후, <code>mex -setup</code>을 수행한다.</p>
 
-<ul>
-<li>Poses in the Wild <a href="#Cherian14">[1]</a> [<a href="http://lear.inrialpes.fr/research/posesinthewild/">link</a>]</li>
-<li><strong>F</strong>rames <strong>L</strong>abeled <strong>I</strong>n <strong>C</strong>inema (FLIC) <a href="#modec13">[2]</a> [<a href="http://vision.grasp.upenn.edu/cgi-bin/index.php?n=VideoLearning.FLIC">link</a>]</li>
-<li>Video Pose 2 [<a href="http://vision.grasp.upenn.edu/cgi-bin/index.php?n=VideoLearning.VideoPose2">link</a>]</li>
-<li>Video Pose [<a href="http://vision.grasp.upenn.edu/cgi-bin/index.php?n=VideoLearning.VideoPose">link</a>]</li>
-<li>Leeds Sports Pose Dataset <a href="#Johnson10">[3]</a> [<a href="http://www.comp.leeds.ac.uk/mat4saj/lsp.html">link</a>]</li>
-<li>Buffy Stickmen V3.01 [<a href="http://www.robots.ox.ac.uk/%7Evgg/data/stickmen/">link</a>]</li>
-<li>ETHZ PASCAL Stickmen V1.11 [<a href="http://groups.inf.ed.ac.uk/calvin/ethz_pascal_stickmen/">link</a>]</li>
-<li>Humans in 3D (H3D) <a href="#PoseletsICCV09">[4]</a> [<a href="http://www.eecs.berkeley.edu/%7Elbourdev/h3d/">link</a>]</li>
-<li>PARSE <a href="#ramanan2006learning">[5]</a> [<a href="http://www.ics.uci.edu/%7Edramanan/papers/parse/">link</a>]</li>
-<li>HumanEva [<a href="http://vision.cs.brown.edu/humaneva/">link</a>]</li>
-</ul>
-
-<h2>Human Pose Class Dataset</h2>
+<h2>Reference</h2>
 
 <ul>
-<li>Buffy Pose Classes [<a href="http://www.robots.ox.ac.uk/%7Evgg/data/buffy_pose_classes/">link</a>]</li>
+<li><a href="http://stackoverflow.com/questions/22367516/mex-compile-error-unknown-type-name-char16-t">Stack Overflow</a></li>
 </ul>
-
-<h2>Synchronous Activity Dataset</h2>
-
-<ul>
-<li>Synchronic Activities Stickmen V1.0 [<a href="http://groups.inf.ed.ac.uk/calvin/synchronic_activities_stickmen/">link</a>]</li>
-</ul>
-
-<h1>Reference</h1>
-
-<ol class="bibliography"><li><span id="Cherian14">A. Cherian, J. Mairal, K. Alahari, and C. Schmid, “Mixing Body-Part Sequences for Human Pose Estimation,” in <i>Computer Vision and Pattern Recognition (CVPR), 2014 IEEE Conference on</i>, 2014.</span></li>
-<li><span id="modec13">B. Sapp and B. Taskar, “MODEC: Multimodal Decomposable Models for Human Pose Estimation,” in <i>Computer Vision and Pattern Recognition (CVPR), 2013 IEEE Conference on</i>, 2013, pp. 3674–3681.</span></li>
-<li><span id="Johnson10">S. Johnson and M. Everingham, “Clustered Pose and Nonlinear Appearance Models for Human Pose Estimation,” in <i>Proceedings of the British Machine Vision Conference</i>, 2010.</span></li>
-<li><span id="PoseletsICCV09">L. Bourdev and J. Malik, “Poselets: Body Part Detectors Trained Using 3D Human Pose Annotations,” in <i>Computer Vision, 2009 IEEE 12th International Conference on</i>, 2009, pp. 1365–1372.</span></li>
-<li><span id="ramanan2006learning">D. Ramanan, “Learning to parse images of articulated bodies,” in <i>Advances in neural information processing systems</i>, 2006, pp. 1129–1136.</span></li></ol>
-
-<p>For other dataset, see <a href="http://www.cvpapers.com/datasets.html">http://www.cvpapers.com/datasets.html</a></p>
 
 
       
       <ul class="tags">
         Tags>
         
-          <li><a href="/search/?tags=human">Human</a></li>
+          <li><a href="/search/?tags=matlab">MATLAB</a></li>
         
-          <li><a href="/search/?tags=pose">Pose</a></li>
+          <li><a href="/search/?tags=mex">mex</a></li>
         
-          <li><a href="/search/?tags=dataset">Dataset</a></li>
+          <li><a href="/search/?tags=char16_t">char16_t</a></li>
+        
+          <li><a href="/search/?tags=compile">compile</a></li>
+        
+          <li><a href="/search/?tags=error">error</a></li>
         
       </ul>
       
@@ -196,6 +182,10 @@
     
       
       <li><a href="/page9">9</a></li>
+      
+    
+      
+      <li><a href="/page10">10</a></li>
       
     
     
