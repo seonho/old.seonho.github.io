@@ -4,13 +4,47 @@
  <title>Seonho Oh</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-08-27T13:46:00+09:00</updated>
+ <updated>2014-12-04T14:02:09+09:00</updated>
  <id></id>
  <author>
    <name>Seonho Oh</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>LaTeX math operators and functions</title>
+   <link href="/latex-math-operator"/>
+   <updated>2014-12-02T00:00:00+09:00</updated>
+   <id>/latex-math-operator</id>
+   <content type="html">&lt;p&gt;자주 사용하는 operator와 함수를 정리해둔다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;c&quot;&gt;% Define argmin and argmax operators&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\DeclareMathOperator*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\argmin&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\arg\!\min&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\DeclareMathOperator*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\argmax&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\arg\!\max&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;% Define trace operator&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\DeclareMathOperator*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\trace&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}{&lt;/span&gt;Tr&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;% Define expectation operator&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\DeclareMathOperator*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\expect&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}{&lt;/span&gt;E&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;% Define variance operator&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\DeclareMathOperator&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\var&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}{&lt;/span&gt;var&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;% Define covariance operator&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\DeclareMathOperator&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\cov&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}{&lt;/span&gt;cov&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;% Define signum function operator&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\DeclareMathOperator&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\sgn&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}{&lt;/span&gt;sgn&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;%\newcommand{\covariance}[1]{\operatorname{cov} \left( #1 \right)}&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;%\newcommand{\expectation}[1]{\operatorname{E} \left[ #1 \right]}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;참고&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://tex.stackexchange.com/questions/498/mid-vertical-bar-vert-lvert-rvert-divides&quot;&gt;vert vs. mid&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>건물 도면 출력하기</title>
@@ -281,6 +315,14 @@ Your contents here
 
 &lt;p&gt;방법은 아래의 자료를 참고하자.&lt;/p&gt;
 
+&lt;p&gt;rvm 설치&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;\curl -sSL https://get.rvm.io | bash -s stable --ruby
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Jekyll 설치 및 관련 자료 설치&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem install jekyll
+gem install jekyll-redirect-from
+gem install jekyll-scholar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;참고&lt;/h2&gt;
 
 &lt;ul&gt;
